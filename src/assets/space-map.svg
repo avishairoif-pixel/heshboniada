@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="45%" r="78%">
+      <stop offset="0" stop-color="#2d2475"/>
+      <stop offset="0.62" stop-color="#16144a"/>
+      <stop offset="1" stop-color="#090a26"/>
+    </radialGradient>
+    <radialGradient id="nebA" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#c173e6" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#c173e6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebB" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#4cb6ee" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#4cb6ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9b8d90"/>
+      <stop offset="1" stop-color="#453a48"/>
+    </linearGradient>
+    <radialGradient id="jup" cx="35%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#ffe0b0"/>
+      <stop offset="0.6" stop-color="#e59a52"/>
+      <stop offset="1" stop-color="#a45a2a"/>
+    </radialGradient>
+    <pattern id="stars" width="170" height="150" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="20" r="2" fill="#fff6d0"/>
+      <circle cx="80" cy="60" r="1.4" fill="#bfeaff"/>
+      <circle cx="140" cy="18" r="1.8" fill="#ffd1ec"/>
+      <circle cx="44" cy="118" r="1.5" fill="#ffffff"/>
+      <circle cx="120" cy="104" r="2.2" fill="#fff0b3"/>
+    </pattern>
+    <g id="ast">
+      <path d="M-125 0 Q-70 -30 0 -26 Q72 -30 125 0 L96 44 Q46 112 0 108 Q-52 112 -98 46 Z" fill="url(#rock)" stroke="#2a2233" stroke-width="4"/>
+      <ellipse cx="0" cy="-6" rx="122" ry="27" fill="#a79a9c" stroke="#2a2233" stroke-width="3"/>
+      <ellipse cx="-44" cy="-8" rx="16" ry="6" fill="#7f7275"/>
+      <ellipse cx="38" cy="-2" rx="22" ry="7" fill="#7f7275"/>
+    </g>
+    <style>.e{font-family:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif;text-anchor:middle;dominant-baseline:central}</style>
+  </defs>
+
+  <rect width="1536" height="1024" fill="url(#sky)"/>
+  <rect width="1536" height="1024" fill="url(#stars)"/>
+  <ellipse cx="360" cy="230" rx="430" ry="150" fill="url(#nebA)" transform="rotate(-16 360 230)"/>
+  <ellipse cx="1120" cy="720" rx="480" ry="230" fill="url(#nebB)"/>
+  <ellipse cx="760" cy="520" rx="360" ry="200" fill="url(#nebA)" opacity="0.5"/>
+
+  <circle cx="990" cy="112" r="56" fill="url(#jup)"/>
+  <path d="M938 98 Q990 86 1042 100 M936 126 Q990 138 1044 124" stroke="#b86d38" stroke-width="7" fill="none" opacity="0.55"/>
+
+  <use href="#ast" transform="translate(261 876) scale(0.8)"/>
+  <use href="#ast" transform="translate(645 784) scale(0.85)"/>
+  <use href="#ast" transform="translate(1121 855) scale(0.85)"/>
+  <use href="#ast" transform="translate(1290 661) scale(0.8)"/>
+  <use href="#ast" transform="translate(952 558) scale(0.9)"/>
+  <use href="#ast" transform="translate(553 620) scale(0.85)"/>
+  <use href="#ast" transform="translate(230 466) scale(0.8)"/>
+  <use href="#ast" transform="translate(707 333) scale(0.85)"/>
+  <use href="#ast" transform="translate(1260 251) scale(0.9)"/>
+  <use href="#ast" transform="translate(1425 330) scale(0.75)"/>
+  <use href="#ast" transform="translate(110 790) scale(0.7)"/>
+
+  <path d="M470 935 Q560 780 650 935 Z" fill="#4b2a78" stroke="#2a1846" stroke-width="5"/>
+
+  <text class="e" x="110" y="690" font-size="150" transform="rotate(-18 110 690)">🚀</text>
+  <text class="e" x="96" y="800" font-size="64">🔥</text>
+  <text class="e" x="130" y="120" font-size="96">⭐</text>
+  <text class="e" x="430" y="118" font-size="118">🌝</text>
+  <text class="e" x="640" y="100" font-size="66">🌍</text>
+  <text class="e" x="820" y="150" font-size="78">🛰️</text>
+  <text class="e" x="1175" y="112" font-size="140">🪐</text>
+  <text class="e" x="1330" y="60" font-size="60">☄️</text>
+  <text class="e" x="1400" y="160" font-size="120">🌈</text>
+  <text class="e" x="1425" y="285" font-size="150">🏰</text>
+  <text class="e" x="860" y="420" font-size="130">🌳</text>
+  <text class="e" x="420" y="300" font-size="56">🚙</text>
+  <text class="e" x="1450" y="520" font-size="92">🤖</text>
+  <text class="e" x="530" y="890" font-size="92">💎</text>
+  <text class="e" x="610" y="915" font-size="66">💎</text>
+  <text class="e" x="905" y="905" font-size="92">💰</text>
+  <text class="e" x="1030" y="945" font-size="58">🛸</text>
+  <text class="e" x="1425" y="895" font-size="140">🧭</text>
+  <text class="e" x="420" y="905" font-size="70">👽</text>
+  <text class="e" x="300" y="600" font-size="44">✨</text>
+  <text class="e" x="1100" y="420" font-size="44">✨</text>
+  <text class="e" x="760" y="920" font-size="44">✨</text>
+
+  <rect x="22" y="22" width="1492" height="980" rx="26" fill="none" stroke="#e7c98d" stroke-width="44"/>
+  <rect x="44" y="44" width="1448" height="936" rx="18" fill="none" stroke="#8f6a36" stroke-width="5"/>
+</svg>

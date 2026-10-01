@@ -1,0 +1,5 @@
+# תוצרי בנייה של גרסת השולחן
+node_modules/
+app/
+build/
+release/

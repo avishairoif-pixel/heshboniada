@@ -1,0 +1,71 @@
+{
+  "name": "cheshboniada-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "החשבוניאדה — משחק חשבון קסום לכיתה ב׳ (גרסת שולחן עבודה)",
+  "author": "Cheshboniada",
+  "license": "UNLICENSED",
+  "main": "main.cjs",
+  "scripts": {
+    "prepare-app": "node prepare.mjs",
+    "start": "npm run prepare-app && electron .",
+    "dist": "npm run prepare-app && electron-builder --win",
+    "dist:portable": "npm run prepare-app && electron-builder --win portable",
+    "dist:mac": "npm run prepare-app && electron-builder --mac",
+    "dist:linux": "npm run prepare-app && electron-builder --linux"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.cheshboniada.game",
+    "productName": "Cheshboniada",
+    "copyright": "Cheshboniada",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.cjs",
+      "preload.cjs",
+      "app/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        },
+        {
+          "target": "portable",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "build/icon.png",
+      "artifactName": "Cheshboniada-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "החשבוניאדה",
+      "deleteAppDataOnUninstall": false
+    },
+    "portable": {
+      "artifactName": "Cheshboniada-Portable-${version}.exe"
+    },
+    "mac": {
+      "target": ["dmg"],
+      "category": "public.app-category.educational-games",
+      "icon": "build/icon.png"
+    },
+    "linux": {
+      "target": ["AppImage"],
+      "category": "Education",
+      "icon": "build/icon.png"
+    }
+  }
+}

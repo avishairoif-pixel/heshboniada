@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024">
+  <defs>
+    <linearGradient id="skyS" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8fd0f7"/>
+      <stop offset="0.6" stop-color="#c9ecff"/>
+      <stop offset="1" stop-color="#a9dcf5"/>
+    </linearGradient>
+    <linearGradient id="rockS" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9b7b5c"/>
+      <stop offset="1" stop-color="#5b4636"/>
+    </linearGradient>
+    <g id="isl">
+      <path d="M-120 0 Q-90 70 -40 96 Q0 130 40 96 Q90 70 120 0 Z" fill="url(#rockS)" stroke="#4d3a2c" stroke-width="3"/>
+      <ellipse cx="0" cy="0" rx="124" ry="28" fill="#7cc95a" stroke="#4f8f3a" stroke-width="3"/>
+      <ellipse cx="-30" cy="-6" rx="40" ry="9" fill="#9be07a" opacity="0.7"/>
+    </g>
+    <g id="cloud" fill="#ffffff">
+      <circle cx="0" cy="0" r="34"/>
+      <circle cx="38" cy="-12" r="42"/>
+      <circle cx="82" cy="2" r="32"/>
+      <rect x="-10" y="0" width="100" height="30" rx="15"/>
+    </g>
+    <style>.e{font-family:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif;text-anchor:middle;dominant-baseline:central}.n{font-family:'Arial Black',Arial,sans-serif;font-weight:900;text-anchor:middle;dominant-baseline:central;stroke:#ffffff;stroke-width:7px;paint-order:stroke}</style>
+  </defs>
+
+  <rect width="1536" height="1024" fill="url(#skyS)"/>
+  <g opacity="0.8">
+    <use href="#cloud" x="300" y="300"/>
+    <use href="#cloud" x="1000" y="440"/>
+    <use href="#cloud" x="560" y="560"/>
+    <use href="#cloud" x="1150" y="700"/>
+    <use href="#cloud" x="120" y="620"/>
+    <use href="#cloud" x="780" y="840"/>
+  </g>
+
+  <use href="#isl" transform="translate(180 250) scale(1.25)"/>
+  <use href="#isl" transform="translate(215 792) scale(0.85)"/>
+  <use href="#isl" transform="translate(492 669) scale(0.85)"/>
+  <use href="#isl" transform="translate(369 403) scale(0.85)"/>
+  <use href="#isl" transform="translate(660 280) scale(1.1)"/>
+  <use href="#isl" transform="translate(952 372) scale(0.85)"/>
+  <use href="#isl" transform="translate(1260 280) scale(0.9)"/>
+  <use href="#isl" transform="translate(1229 597) scale(0.85)"/>
+  <use href="#isl" transform="translate(891 710) scale(0.85)"/>
+  <use href="#isl" transform="translate(1229 853) scale(0.9)"/>
+  <use href="#isl" transform="translate(1110 170) scale(0.8)"/>
+  <use href="#isl" transform="translate(1430 430) scale(0.7)"/>
+  <use href="#isl" transform="translate(640 920) scale(0.9)"/>
+
+  <circle cx="560" cy="100" r="54" fill="#6cc24a"/>
+  <circle cx="660" cy="90" r="58" fill="#5cb63e"/>
+  <circle cx="760" cy="100" r="54" fill="#6cc24a"/>
+  <text class="n" x="560" y="104" font-size="90" fill="#f6c343">1</text>
+  <text class="n" x="660" y="94" font-size="90" fill="#4aa3f0">2</text>
+  <text class="n" x="760" y="104" font-size="90" fill="#b46be0">3</text>
+
+  <path d="M1040 170 Q1110 40 1180 170 Z" fill="#6b4fb3" stroke="#44307a" stroke-width="5"/>
+
+  <text class="e" x="110" y="70" font-size="90">🌈</text>
+  <text class="e" x="180" y="170" font-size="150">🏰</text>
+  <text class="e" x="1090" y="110" font-size="100">💎</text>
+  <text class="e" x="1160" y="140" font-size="66">💎</text>
+  <text class="e" x="1440" y="105" font-size="110">🧭</text>
+  <text class="e" x="1430" y="370" font-size="100">🔭</text>
+  <text class="e" x="90" y="470" font-size="130">🧬</text>
+  <text class="e" x="330" y="870" font-size="70">⚗️</text>
+  <text class="e" x="390" y="885" font-size="56">🧪</text>
+  <text class="e" x="230" y="560" font-size="84">🧮</text>
+  <text class="e" x="95" y="880" font-size="110">🤖</text>
+  <text class="e" x="1060" y="890" font-size="76">🤖</text>
+  <text class="e" x="640" y="860" font-size="150">🦖</text>
+  <text class="e" x="1420" y="850" font-size="110">💰</text>
+  <text class="e" x="1480" y="905" font-size="44">🪙</text>
+  <text class="e" x="880" y="160" font-size="56">⚛️</text>
+  <text class="e" x="1440" y="640" font-size="80">🪐</text>
+  <text class="e" x="1060" y="480" font-size="56">📐</text>
+  <text class="e" x="760" y="480" font-size="56">🔬</text>
+  <text class="e" x="300" y="60" font-size="50">⭐</text>
+  <text class="e" x="1300" y="470" font-size="44">✨</text>
+
+  <rect x="22" y="22" width="1492" height="980" rx="26" fill="none" stroke="#e7c98d" stroke-width="44"/>
+  <rect x="44" y="44" width="1448" height="936" rx="18" fill="none" stroke="#8f6a36" stroke-width="5"/>
+</svg>

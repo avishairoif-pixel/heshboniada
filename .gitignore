@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
+# Android build artifacts (created by CI)
+android/
+
+# Desktop build artifacts
+desktop/node_modules/
+desktop/dist/
+release/
+
+# Local env / editor
+.env
+.env.local
+*.local
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

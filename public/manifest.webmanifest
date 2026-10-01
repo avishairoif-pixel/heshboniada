@@ -1,0 +1,29 @@
+{
+  "name": "החשבוניאדה — מרוץ החשבון של שלומפר",
+  "short_name": "חשבוניאדה",
+  "description": "משחק חשבון קסום לכיתה ב׳ — עזרי לשלומפר החד-קרן לנצח במרוץ החשבוניאדה!",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "dir": "rtl",
+  "lang": "he",
+  "background_color": "#25123d",
+  "theme_color": "#25123d",
+  "categories": ["games", "education", "kids"],
+  "icons": [
+    {
+      "src": "icons/app-icon-512.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/app-icon-512.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

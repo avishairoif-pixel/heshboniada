@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024">
+  <defs>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#62d3e6"/>
+      <stop offset="0.55" stop-color="#2eb0cf"/>
+      <stop offset="1" stop-color="#1b8db3"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7dc98"/>
+      <stop offset="1" stop-color="#e2bb6a"/>
+    </linearGradient>
+    <pattern id="waves" width="120" height="70" patternUnits="userSpaceOnUse">
+      <path d="M8 40 Q22 28 36 40 T64 40" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.35" stroke-linecap="round"/>
+      <path d="M70 14 Q82 4 94 14" stroke="#ffffff" stroke-width="2.5" fill="none" opacity="0.28" stroke-linecap="round"/>
+    </pattern>
+    <style>.e{font-family:'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif;text-anchor:middle;dominant-baseline:central}</style>
+  </defs>
+
+  <rect width="1536" height="1024" fill="url(#sea)"/>
+  <rect width="1536" height="1024" fill="url(#waves)"/>
+
+  <g stroke="#c99a4b" stroke-width="6" fill="url(#sand)">
+    <path d="M150 380 Q300 300 470 350 Q560 420 510 560 Q470 700 420 820 Q300 900 170 850 Q90 760 110 620 Q100 480 150 380 Z"/>
+    <path d="M540 320 Q560 150 700 90 Q840 80 880 200 Q900 330 780 380 Q640 420 540 320 Z"/>
+    <path d="M1000 150 Q1150 70 1330 110 Q1440 170 1400 290 Q1300 340 1150 320 Q1020 300 1000 150 Z"/>
+    <path d="M840 330 Q940 280 1010 340 Q1030 420 940 450 Q850 450 840 330 Z"/>
+    <path d="M1060 430 Q1200 380 1420 400 Q1500 470 1400 540 Q1240 580 1090 540 Q1030 490 1060 430 Z"/>
+    <path d="M800 660 Q930 600 1050 650 Q1080 760 960 800 Q830 810 800 660 Z"/>
+    <path d="M1120 760 Q1260 690 1440 740 Q1500 850 1400 920 Q1240 950 1130 880 Q1080 820 1120 760 Z"/>
+    <path d="M500 820 Q600 780 700 830 Q700 900 600 920 Q500 910 500 820 Z"/>
+    <ellipse cx="700" cy="600" rx="74" ry="30"/>
+  </g>
+  <g fill="#72c257" opacity="0.8">
+    <ellipse cx="260" cy="520" rx="120" ry="70"/>
+    <ellipse cx="330" cy="740" rx="80" ry="40"/>
+    <ellipse cx="700" cy="250" rx="110" ry="60"/>
+    <ellipse cx="1200" cy="200" rx="130" ry="50"/>
+    <ellipse cx="1260" cy="470" rx="120" ry="34"/>
+    <ellipse cx="930" cy="700" rx="70" ry="30"/>
+    <ellipse cx="1300" cy="820" rx="100" ry="36"/>
+  </g>
+
+  <g fill="#8a5a2b" stroke="#5e3a17" stroke-width="3">
+    <rect x="495" y="382" width="70" height="22" rx="5" transform="rotate(-18 530 393)"/>
+    <rect x="1055" y="766" width="70" height="22" rx="5" transform="rotate(12 1090 777)"/>
+  </g>
+
+  <path d="M1330 905 Q1400 760 1470 905 Z" fill="#5b3a8c" stroke="#3a2360" stroke-width="5"/>
+
+  <text class="e" x="100" y="105" font-size="90">🧭</text>
+  <text class="e" x="270" y="200" font-size="150">⛵</text>
+  <text class="e" x="300" y="95" font-size="56">🏴‍☠️</text>
+  <text class="e" x="130" y="420" font-size="110">🌴</text>
+  <text class="e" x="440" y="320" font-size="90">🌴</text>
+  <text class="e" x="200" y="580" font-size="70">🌴</text>
+  <text class="e" x="450" y="450" font-size="64">🦜</text>
+  <text class="e" x="470" y="640" font-size="64">🐢</text>
+  <text class="e" x="700" y="570" font-size="104">🧜‍♀️</text>
+  <text class="e" x="630" y="160" font-size="150">🌋</text>
+  <text class="e" x="640" y="55" font-size="60">☁️</text>
+  <text class="e" x="920" y="80" font-size="110">🌈</text>
+  <text class="e" x="1320" y="160" font-size="150">🏰</text>
+  <text class="e" x="1000" y="190" font-size="64">🐬</text>
+  <text class="e" x="800" y="520" font-size="56">🐬</text>
+  <text class="e" x="1400" y="410" font-size="140">🌳</text>
+  <text class="e" x="1400" y="400" font-size="44">🏠</text>
+  <text class="e" x="1380" y="640" font-size="120">🐳</text>
+  <text class="e" x="1400" y="860" font-size="110">💎</text>
+  <text class="e" x="1320" y="900" font-size="64">💎</text>
+  <text class="e" x="590" y="860" font-size="96">💰</text>
+  <text class="e" x="650" y="895" font-size="46">🪙</text>
+  <text class="e" x="840" y="760" font-size="70">💰</text>
+  <text class="e" x="110" y="880" font-size="96">⚓</text>
+  <text class="e" x="190" y="925" font-size="46">🪵</text>
+  <text class="e" x="380" y="800" font-size="40">🐚</text>
+
+  <rect x="22" y="22" width="1492" height="980" rx="26" fill="none" stroke="#e7c98d" stroke-width="44"/>
+  <rect x="44" y="44" width="1448" height="936" rx="18" fill="none" stroke="#8f6a36" stroke-width="5"/>
+</svg>
