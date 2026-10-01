@@ -150,16 +150,18 @@ export default function LevelPlay({ level, difficulty, paused, onPause, onFinish
   useEffect(() => {
     if (!timerEnabled || paused || answerState || finishedRef.current) return undefined;
     const interval = window.setInterval(() => {
-      setTimeLeft((previous) => {
-        if (previous <= 1) {
-          window.setTimeout(() => answerRef.current(-1), 0);
-          return 0;
-        }
-        return previous - 1;
-      });
+      setTimeLeft((previous) => Math.max(0, previous - 1));
     }, 1000);
     return () => window.clearInterval(interval);
   }, [answerState, index, paused, timerEnabled]);
+
+  /* כשהזמן אוזל — מפעילים "פספוס" דרך effect נפרד, כדי לא לעשות תופעות לוואי בתוך setState updater (StrictMode) */
+  useEffect(() => {
+    if (!timerEnabled || answerState || finishedRef.current) return;
+    if (timeLeft > 0) return;
+    const handle = window.setTimeout(() => answerRef.current(-1), 0);
+    return () => window.clearTimeout(handle);
+  }, [answerState, finishedRef.current, timeLeft, timerEnabled]);
 
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {

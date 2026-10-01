@@ -493,5 +493,13 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .race-home-art, .scene-landscape, .scene-character, .race-home-content { animation: none !important; }
+  .race-home-art, .scene-landscape, .scene-character, .race-home-content,
+  .ember, .burst-dot, .play-screen.shaking, .gnome, .fairy-wing-left, .fairy-wing-right,
+  .float-score, .star.pop, .medal, .station, .map-token, .hud-bar > i {
+    animation: none !important;
+    transition: none !important;
+  }
+  .play-screen.shaking { transform: none !important; }
+  .burst { display: none !important; }
+  .ember-field { display: none !important; }
 }

@@ -57,6 +57,17 @@ export function saveProgress(progress: Progress): void {
   }
 }
 
+/** מנקה את כל ההתקדמות וטבלת השיאים — מחזיר את הערכים ההתחלתיים */
+export function resetProgress(): { progress: Progress; scores: ScoreEntry[] } {
+  try {
+    localStorage.removeItem(PROGRESS_KEY);
+    localStorage.removeItem(SCORE_KEY);
+  } catch {
+    // אם localStorage לא זמין — המצב בזיכרון בכל מקרה יתאפס ע"י הקורא
+  }
+  return { progress: {}, scores: DEFAULT_SCORES };
+}
+
 export function loadScores(): ScoreEntry[] {
   try {
     const stored = localStorage.getItem(SCORE_KEY);

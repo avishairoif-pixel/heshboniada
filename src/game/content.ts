@@ -184,92 +184,92 @@ export const REGIONS: Region[] = [
 /* 9 תחנות לאורך השביל הירוק — בכל תחנה בדיוק 5 שאלות.
    הסדר: מאחו החד-קרן (למטה) עד טירת הקשת ותיבת האוצר (למעלה). */
 export const LEVELS: LevelDef[] = [
-  { id: 1, world: 'kingdom', name: 'אחו החד-קרן', region: 0, topics: ['units', 'words'], questions: 5, boss: false, x: 17, y: 80 },
-  { id: 2, world: 'kingdom', name: 'בית העץ הענק', region: 0, topics: ['digits', 'compare'], questions: 5, boss: false, x: 43, y: 70 },
-  { id: 3, world: 'kingdom', name: 'חוף הצדף הנוצץ', region: 0, topics: ['add-sub-20', 'tens'], questions: 5, boss: false, x: 69, y: 80 },
-  { id: 4, world: 'kingdom', name: 'מערת הקריסטל', region: 1, topics: ['parity', 'series'], questions: 5, boss: false, x: 85, y: 60 },
-  { id: 5, world: 'kingdom', name: 'כפר הגשר הקסום', region: 1, topics: ['numberline', 'word-problem'], questions: 5, boss: false, x: 62, y: 50 },
-  { id: 6, world: 'kingdom', name: 'בתי הפטריות', region: 1, topics: ['chain', 'parts'], questions: 5, boss: false, x: 37, y: 57 },
-  { id: 7, world: 'kingdom', name: 'מפל הפיות', region: 2, topics: ['square', 'rectangle'], questions: 5, boss: false, x: 14, y: 43 },
-  { id: 8, world: 'kingdom', name: 'אגם הזוהר', region: 2, topics: ['length', 'polygons'], questions: 5, boss: false, x: 44, y: 29 },
-  { id: 9, world: 'kingdom', name: 'טירת הקשת 👑', region: 2, topics: ['vertices', 'word-problem', 'chain', 'polygons', 'add-sub-20'], questions: 5, boss: true, x: 82, y: 23 },
-  { id: 10, world: 'space', name: 'רציף השיגור', region: 3, topics: ['units', 'digits'], questions: 5, boss: false, x: 19, y: 56 },
-  { id: 11, world: 'space', name: 'תחנת הירח', region: 3, topics: ['add-sub-20', 'words'], questions: 5, boss: false, x: 29, y: 31 },
-  { id: 12, world: 'space', name: 'טבעת שבתאי', region: 3, topics: ['tens', 'compare'], questions: 5, boss: true, x: 39, y: 63 },
-  { id: 13, world: 'space', name: 'שביל האסטרואידים', region: 4, topics: ['series', 'parity'], questions: 5, boss: false, x: 59, y: 35 },
-  { id: 14, world: 'space', name: 'מצפה הכוכבים', region: 4, topics: ['numberline', 'chain'], questions: 5, boss: false, x: 63, y: 71 },
-  { id: 15, world: 'space', name: 'כוכב העוגות', region: 4, topics: ['parts', 'word-problem'], questions: 5, boss: true, x: 81, y: 30 },
-  { id: 16, world: 'space', name: 'מכתש הירח', region: 5, topics: ['square', 'rectangle', 'length'], questions: 5, boss: false, x: 82, y: 56 },
-  { id: 17, world: 'space', name: 'ערפילית הקשת', region: 5, topics: ['polygons', 'vertices', 'series'], questions: 5, boss: false, x: 45, y: 45 },
-  { id: 18, world: 'space', name: 'כוכב הכתר 👑', region: 5, topics: ['vertices', 'word-problem', 'chain', 'polygons', 'add-sub-20'], questions: 5, boss: true, x: 70, y: 60 },
-  { id: 19, world: 'pirates', name: 'חוף הספינה הטרופה', region: 6, topics: ['compare', 'units'], questions: 5, boss: false, x: 17, y: 68 },
-  { id: 20, world: 'pirates', name: 'חורשת התוכים', region: 6, topics: ['add-sub-20', 'digits'], questions: 5, boss: false, x: 22, y: 46 },
-  { id: 21, world: 'pirates', name: 'גשר הצבים', region: 6, topics: ['tens', 'words'], questions: 5, boss: false, x: 38, y: 38 },
-  { id: 22, world: 'pirates', name: 'הר הגעש הלוחש', region: 7, topics: ['series', 'parity'], questions: 5, boss: false, x: 50, y: 19 },
-  { id: 23, world: 'pirates', name: 'לגונת הדולפינים', region: 7, topics: ['numberline', 'word-problem'], questions: 5, boss: false, x: 60, y: 37 },
-  { id: 24, world: 'pirates', name: 'מבצר הפיראטים', region: 7, topics: ['chain', 'parts'], questions: 5, boss: true, x: 72, y: 23 },
-  { id: 25, world: 'pirates', name: 'בית העץ של פנינה', region: 8, topics: ['length', 'square'], questions: 5, boss: false, x: 74, y: 47 },
-  { id: 26, world: 'pirates', name: 'אי תיבת האוצר', region: 8, topics: ['polygons', 'rectangle'], questions: 5, boss: false, x: 61, y: 70 },
-  { id: 27, world: 'pirates', name: 'מערת הפנינים 👑', region: 8, topics: ['vertices', 'word-problem', 'chain', 'series', 'compare'], questions: 5, boss: true, x: 78, y: 78 },
-  { id: 28, world: 'science', name: 'מעבדת השיקויים', region: 9, topics: ['digits', 'compare'], questions: 5, boss: false, x: 6, y: 41 },
-  { id: 29, world: 'science', name: 'יער המספרים', region: 9, topics: ['series', 'units'], questions: 5, boss: false, x: 31, y: 41 },
-  { id: 30, world: 'science', name: 'גשר החשבוניה', region: 9, topics: ['add-sub-20', 'chain'], questions: 5, boss: false, x: 31, y: 66 },
-  { id: 31, world: 'science', name: 'מצפה הטלסקופ', region: 10, topics: ['numberline', 'tens'], questions: 5, boss: false, x: 49, y: 34 },
-  { id: 32, world: 'science', name: 'מערת הקריסטלים', region: 10, topics: ['polygons', 'vertices'], questions: 5, boss: false, x: 67, y: 38 },
-  { id: 33, world: 'science', name: 'גן האטומים', region: 10, topics: ['parity', 'word-problem'], questions: 5, boss: true, x: 65, y: 77 },
-  { id: 34, world: 'science', name: 'אי הדינוזאור', region: 11, topics: ['length', 'rectangle'], questions: 5, boss: false, x: 76, y: 56 },
-  { id: 35, world: 'science', name: 'מפעל הרובוטים', region: 11, topics: ['parts', 'square'], questions: 5, boss: false, x: 55, y: 55 },
-  { id: 36, world: 'science', name: 'תיבת הגילויים 👑', region: 11, topics: ['word-problem', 'chain', 'vertices', 'series', 'numberline'], questions: 5, boss: true, x: 80, y: 20 },
+  { id: 1, world: 'kingdom', name: 'אחו החד-קרן', region: 0, topics: ['units', 'words'], questions: 5, boss: false, x: 12, y: 82 },
+  { id: 2, world: 'kingdom', name: 'בית העץ הענק', region: 0, topics: ['digits', 'compare'], questions: 5, boss: false, x: 35, y: 78 },
+  { id: 3, world: 'kingdom', name: 'חוף הצדף הנוצץ', region: 0, topics: ['add-sub-20', 'tens'], questions: 5, boss: false, x: 58, y: 82 },
+  { id: 4, world: 'kingdom', name: 'מערת הקריסטל', region: 1, topics: ['parity', 'series'], questions: 5, boss: false, x: 82, y: 76 },
+  { id: 5, world: 'kingdom', name: 'כפר הגשר הקסום', region: 1, topics: ['numberline', 'word-problem'], questions: 5, boss: false, x: 86, y: 56 },
+  { id: 6, world: 'kingdom', name: 'בתי הפטריות', region: 1, topics: ['chain', 'parts'], questions: 5, boss: false, x: 62, y: 52 },
+  { id: 7, world: 'kingdom', name: 'מפל הפיות', region: 2, topics: ['square', 'rectangle'], questions: 5, boss: false, x: 38, y: 56 },
+  { id: 8, world: 'kingdom', name: 'אגם הזוהר', region: 2, topics: ['length', 'polygons'], questions: 5, boss: false, x: 14, y: 50 },
+  { id: 9, world: 'kingdom', name: 'טירת הקשת 👑', region: 2, topics: ['vertices', 'word-problem', 'chain', 'polygons', 'add-sub-20'], questions: 5, boss: true, x: 50, y: 22 },
+  { id: 10, world: 'space', name: 'רציף השיגור', region: 3, topics: ['units', 'digits'], questions: 5, boss: false, x: 14, y: 76 },
+  { id: 11, world: 'space', name: 'תחנת הירח', region: 3, topics: ['add-sub-20', 'words'], questions: 5, boss: false, x: 32, y: 72 },
+  { id: 12, world: 'space', name: 'טבעת שבתאי', region: 3, topics: ['tens', 'compare'], questions: 5, boss: true, x: 52, y: 78 },
+  { id: 13, world: 'space', name: 'שביל האסטרואידים', region: 4, topics: ['series', 'parity'], questions: 5, boss: false, x: 74, y: 72 },
+  { id: 14, world: 'space', name: 'מצפה הכוכבים', region: 4, topics: ['numberline', 'chain'], questions: 5, boss: false, x: 86, y: 52 },
+  { id: 15, world: 'space', name: 'כוכב העוגות', region: 4, topics: ['parts', 'word-problem'], questions: 5, boss: true, x: 62, y: 48 },
+  { id: 16, world: 'space', name: 'מכתש הירח', region: 5, topics: ['square', 'rectangle', 'length'], questions: 5, boss: false, x: 38, y: 52 },
+  { id: 17, world: 'space', name: 'ערפילית הקשת', region: 5, topics: ['polygons', 'vertices', 'series'], questions: 5, boss: false, x: 14, y: 46 },
+  { id: 18, world: 'space', name: 'כוכב הכתר 👑', region: 5, topics: ['vertices', 'word-problem', 'chain', 'polygons', 'add-sub-20'], questions: 5, boss: true, x: 84, y: 14 },
+  { id: 19, world: 'pirates', name: 'חוף הספינה הטרופה', region: 6, topics: ['compare', 'units'], questions: 5, boss: false, x: 14, y: 22 },
+  { id: 20, world: 'pirates', name: 'חורשת התוכים', region: 6, topics: ['add-sub-20', 'digits'], questions: 5, boss: false, x: 35, y: 26 },
+  { id: 21, world: 'pirates', name: 'גשר הצבים', region: 6, topics: ['tens', 'words'], questions: 5, boss: false, x: 56, y: 22 },
+  { id: 22, world: 'pirates', name: 'הר הגעש הלוחש', region: 7, topics: ['series', 'parity'], questions: 5, boss: false, x: 78, y: 26 },
+  { id: 23, world: 'pirates', name: 'לגונת הדולפינים', region: 7, topics: ['numberline', 'word-problem'], questions: 5, boss: false, x: 85, y: 48 },
+  { id: 24, world: 'pirates', name: 'מבצר הפיראטים', region: 7, topics: ['chain', 'parts'], questions: 5, boss: true, x: 60, y: 52 },
+  { id: 25, world: 'pirates', name: 'בית העץ של פנינה', region: 8, topics: ['length', 'square'], questions: 5, boss: false, x: 35, y: 48 },
+  { id: 26, world: 'pirates', name: 'אי תיבת האוצר', region: 8, topics: ['polygons', 'rectangle'], questions: 5, boss: false, x: 16, y: 52 },
+  { id: 27, world: 'pirates', name: 'מערת הפנינים 👑', region: 8, topics: ['vertices', 'word-problem', 'chain', 'series', 'compare'], questions: 5, boss: true, x: 85, y: 68 },
+  { id: 28, world: 'science', name: 'מעבדת השיקויים', region: 9, topics: ['digits', 'compare'], questions: 5, boss: false, x: 14, y: 24 },
+  { id: 29, world: 'science', name: 'יער המספרים', region: 9, topics: ['series', 'units'], questions: 5, boss: false, x: 32, y: 28 },
+  { id: 30, world: 'science', name: 'גשר החשבוניה', region: 9, topics: ['add-sub-20', 'chain'], questions: 5, boss: false, x: 52, y: 22 },
+  { id: 31, world: 'science', name: 'מצפה הטלסקופ', region: 10, topics: ['numberline', 'tens'], questions: 5, boss: false, x: 74, y: 28 },
+  { id: 32, world: 'science', name: 'מערת הקריסטלים', region: 10, topics: ['polygons', 'vertices'], questions: 5, boss: false, x: 86, y: 48 },
+  { id: 33, world: 'science', name: 'גן האטומים', region: 10, topics: ['parity', 'word-problem'], questions: 5, boss: true, x: 62, y: 52 },
+  { id: 34, world: 'science', name: 'אי הדינוזאור', region: 11, topics: ['length', 'rectangle'], questions: 5, boss: false, x: 38, y: 48 },
+  { id: 35, world: 'science', name: 'מפעל הרובוטים', region: 11, topics: ['parts', 'square'], questions: 5, boss: false, x: 14, y: 54 },
+  { id: 36, world: 'science', name: 'תיבת הגילויים 👑', region: 11, topics: ['word-problem', 'chain', 'vertices', 'series', 'numberline'], questions: 5, boss: true, x: 84, y: 66 },
   /* ---------------- עולם הפרחים 🌸 ---------------- */
-  { id: 37, world: 'flowers', name: 'שער הגינה', region: 12, topics: ['units', 'words'], questions: 5, boss: false, x: 18, y: 86 },
-  { id: 38, world: 'flowers', name: 'מסלול השבלולים', region: 12, topics: ['add-sub-20', 'compare'], questions: 5, boss: false, x: 50, y: 87 },
-  { id: 39, world: 'flowers', name: 'בריכת החבצלות', region: 12, topics: ['digits', 'series'], questions: 5, boss: false, x: 78, y: 83 },
-  { id: 40, world: 'flowers', name: 'מבוך החמניות', region: 13, topics: ['tens', 'parity'], questions: 5, boss: false, x: 88, y: 39 },
-  { id: 41, world: 'flowers', name: 'גבעת הצחוקים', region: 13, topics: ['numberline', 'chain'], questions: 5, boss: false, x: 69, y: 45 },
-  { id: 42, world: 'flowers', name: 'מערת הזרעים', region: 13, topics: ['parts', 'word-problem'], questions: 5, boss: true, x: 50, y: 49 },
-  { id: 43, world: 'flowers', name: 'מדשאת הפרפרים', region: 14, topics: ['length', 'square'], questions: 5, boss: false, x: 9, y: 51 },
-  { id: 44, world: 'flowers', name: 'שביל הריחות', region: 14, topics: ['rectangle', 'polygons'], questions: 5, boss: false, x: 23, y: 29 },
-  { id: 45, world: 'flowers', name: 'פרח הקסם 👑', region: 14, topics: ['vertices', 'word-problem', 'chain', 'series', 'compare'], questions: 5, boss: true, x: 50, y: 10 },
+  { id: 37, world: 'flowers', name: 'שער הגינה', region: 12, topics: ['units', 'words'], questions: 5, boss: false, x: 14, y: 78 },
+  { id: 38, world: 'flowers', name: 'מסלול השבלולים', region: 12, topics: ['add-sub-20', 'compare'], questions: 5, boss: false, x: 32, y: 82 },
+  { id: 39, world: 'flowers', name: 'בריכת החבצלות', region: 12, topics: ['digits', 'series'], questions: 5, boss: false, x: 52, y: 78 },
+  { id: 40, world: 'flowers', name: 'מבוך החמניות', region: 13, topics: ['tens', 'parity'], questions: 5, boss: false, x: 74, y: 82 },
+  { id: 41, world: 'flowers', name: 'גבעת הצחוקים', region: 13, topics: ['numberline', 'chain'], questions: 5, boss: false, x: 86, y: 62 },
+  { id: 42, world: 'flowers', name: 'מערת הזרעים', region: 13, topics: ['parts', 'word-problem'], questions: 5, boss: true, x: 62, y: 58 },
+  { id: 43, world: 'flowers', name: 'מדשאת הפרפרים', region: 14, topics: ['length', 'square'], questions: 5, boss: false, x: 38, y: 62 },
+  { id: 44, world: 'flowers', name: 'שביל הריחות', region: 14, topics: ['rectangle', 'polygons'], questions: 5, boss: false, x: 14, y: 56 },
+  { id: 45, world: 'flowers', name: 'פרח הקסם 👑', region: 14, topics: ['vertices', 'word-problem', 'chain', 'series', 'compare'], questions: 5, boss: true, x: 84, y: 14 },
   /* ---------------- עולם הכימיה והשיקויים 🧪 ---------------- */
-  { id: 46, world: 'potion', name: 'שולחן המבחנות', region: 15, topics: ['units', 'digits'], questions: 5, boss: false, x: 21, y: 76 },
-  { id: 47, world: 'potion', name: 'מדף התבלינים', region: 15, topics: ['add-sub-20', 'words'], questions: 5, boss: false, x: 42, y: 26 },
-  { id: 48, world: 'potion', name: 'סיר הערבוב', region: 15, topics: ['tens', 'compare'], questions: 5, boss: true, x: 33, y: 82 },
-  { id: 49, world: 'potion', name: 'מזקקת הקסם', region: 16, topics: ['series', 'parity'], questions: 5, boss: false, x: 66, y: 80 },
-  { id: 50, world: 'potion', name: 'ארון המרקחות', region: 16, topics: ['numberline', 'chain'], questions: 5, boss: false, x: 69, y: 51 },
-  { id: 51, world: 'potion', name: 'מעבדת הבועות', region: 16, topics: ['parts', 'word-problem'], questions: 5, boss: true, x: 23, y: 40 },
-  { id: 52, world: 'potion', name: 'מגדל הספרים', region: 17, topics: ['square', 'rectangle'], questions: 5, boss: false, x: 25, y: 13 },
-  { id: 53, world: 'potion', name: 'חדר הכוכבים', region: 17, topics: ['length', 'polygons'], questions: 5, boss: false, x: 70, y: 27 },
-  { id: 54, world: 'potion', name: 'שיקוי הקשת 👑', region: 17, topics: ['vertices', 'word-problem', 'series', 'chain', 'polygons'], questions: 5, boss: true, x: 46, y: 50 },
+  { id: 46, world: 'potion', name: 'שולחן המבחנות', region: 15, topics: ['units', 'digits'], questions: 5, boss: false, x: 14, y: 78 },
+  { id: 47, world: 'potion', name: 'מדף התבלינים', region: 15, topics: ['add-sub-20', 'words'], questions: 5, boss: false, x: 32, y: 74 },
+  { id: 48, world: 'potion', name: 'סיר הערבוב', region: 15, topics: ['tens', 'compare'], questions: 5, boss: true, x: 52, y: 80 },
+  { id: 49, world: 'potion', name: 'מזקקת הקסם', region: 16, topics: ['series', 'parity'], questions: 5, boss: false, x: 74, y: 74 },
+  { id: 50, world: 'potion', name: 'ארון המרקחות', region: 16, topics: ['numberline', 'chain'], questions: 5, boss: false, x: 86, y: 54 },
+  { id: 51, world: 'potion', name: 'מעבדת הבועות', region: 16, topics: ['parts', 'word-problem'], questions: 5, boss: true, x: 62, y: 50 },
+  { id: 52, world: 'potion', name: 'מגדל הספרים', region: 17, topics: ['square', 'rectangle'], questions: 5, boss: false, x: 38, y: 54 },
+  { id: 53, world: 'potion', name: 'חדר הכוכבים', region: 17, topics: ['length', 'polygons'], questions: 5, boss: false, x: 14, y: 48 },
+  { id: 54, world: 'potion', name: 'שיקוי הקשת 👑', region: 17, topics: ['vertices', 'word-problem', 'series', 'chain', 'polygons'], questions: 5, boss: true, x: 84, y: 14 },
   /* ---------------- עולם גן החיות 🦁 ---------------- */
-  { id: 55, world: 'zoo', name: 'שער הספארי', region: 18, topics: ['units', 'compare'], questions: 5, boss: false, x: 9, y: 75 },
-  { id: 56, world: 'zoo', name: 'מכלוב הקופים', region: 18, topics: ['add-sub-20', 'digits'], questions: 5, boss: false, x: 21, y: 75 },
-  { id: 57, world: 'zoo', name: 'אגם הפלמינגו', region: 18, topics: ['tens', 'words'], questions: 5, boss: false, x: 26, y: 70 },
-  { id: 58, world: 'zoo', name: 'מערת העטלפים', region: 19, topics: ['series', 'parity'], questions: 5, boss: false, x: 72, y: 66 },
-  { id: 59, world: 'zoo', name: 'עמק הג׳ירפות', region: 19, topics: ['numberline', 'word-problem'], questions: 5, boss: false, x: 50, y: 48 },
-  { id: 60, world: 'zoo', name: 'קן הדינוזאורים', region: 19, topics: ['chain', 'parts'], questions: 5, boss: true, x: 24, y: 47 },
-  { id: 61, world: 'zoo', name: 'ביצת הטי-רקס', region: 20, topics: ['length', 'square'], questions: 5, boss: false, x: 24, y: 21 },
-  { id: 62, world: 'zoo', name: 'מאורת האריות', region: 20, topics: ['rectangle', 'polygons'], questions: 5, boss: false, x: 55, y: 22 },
-  { id: 63, world: 'zoo', name: 'מלך הספארי 👑', region: 20, topics: ['vertices', 'word-problem', 'chain', 'series', 'length'], questions: 5, boss: true, x: 79, y: 23 },
+  { id: 55, world: 'zoo', name: 'שער הספארי', region: 18, topics: ['units', 'compare'], questions: 5, boss: false, x: 14, y: 78 },
+  { id: 56, world: 'zoo', name: 'מכלוב הקופים', region: 18, topics: ['add-sub-20', 'digits'], questions: 5, boss: false, x: 32, y: 74 },
+  { id: 57, world: 'zoo', name: 'אגם הפלמינגו', region: 18, topics: ['tens', 'words'], questions: 5, boss: false, x: 52, y: 80 },
+  { id: 58, world: 'zoo', name: 'מערת העטלפים', region: 19, topics: ['series', 'parity'], questions: 5, boss: false, x: 74, y: 74 },
+  { id: 59, world: 'zoo', name: 'עמק הג׳ירפות', region: 19, topics: ['numberline', 'word-problem'], questions: 5, boss: false, x: 86, y: 54 },
+  { id: 60, world: 'zoo', name: 'קן הדינוזאורים', region: 19, topics: ['chain', 'parts'], questions: 5, boss: true, x: 62, y: 50 },
+  { id: 61, world: 'zoo', name: 'ביצת הטי-רקס', region: 20, topics: ['length', 'square'], questions: 5, boss: false, x: 38, y: 54 },
+  { id: 62, world: 'zoo', name: 'מאורת האריות', region: 20, topics: ['rectangle', 'polygons'], questions: 5, boss: false, x: 14, y: 48 },
+  { id: 63, world: 'zoo', name: 'מלך הספארי 👑', region: 20, topics: ['vertices', 'word-problem', 'chain', 'series', 'length'], questions: 5, boss: true, x: 84, y: 14 },
   /* ---------------- עולם הרובוטים 🤖 ---------------- */
-  { id: 64, world: 'robots', name: 'מסוע החלקים', region: 21, topics: ['units', 'digits'], questions: 5, boss: false, x: 16, y: 37 },
-  { id: 65, world: 'robots', name: 'מעבדת הצבעים', region: 21, topics: ['add-sub-20', 'compare'], questions: 5, boss: false, x: 25, y: 10 },
-  { id: 66, world: 'robots', name: 'אולם ההילוכים', region: 21, topics: ['tens', 'words'], questions: 5, boss: true, x: 44, y: 63 },
-  { id: 67, world: 'robots', name: 'חדר הסוללות', region: 22, topics: ['series', 'parity'], questions: 5, boss: false, x: 58, y: 18 },
-  { id: 68, world: 'robots', name: 'סדנת התיקונים', region: 22, topics: ['numberline', 'chain'], questions: 5, boss: false, x: 60, y: 44 },
-  { id: 69, world: 'robots', name: 'מעבדת הצעצועים', region: 22, topics: ['parts', 'word-problem'], questions: 5, boss: true, x: 38, y: 28 },
-  { id: 70, world: 'robots', name: 'מחסן המנועים', region: 23, topics: ['square', 'rectangle'], questions: 5, boss: false, x: 78, y: 30 },
-  { id: 71, world: 'robots', name: 'חדר הבקרה', region: 23, topics: ['length', 'polygons'], questions: 5, boss: false, x: 89, y: 12 },
-  { id: 72, world: 'robots', name: 'רובוט העל 👑', region: 23, topics: ['vertices', 'word-problem', 'series', 'chain', 'polygons'], questions: 5, boss: true, x: 81, y: 70 },
+  { id: 64, world: 'robots', name: 'מסוע החלקים', region: 21, topics: ['units', 'digits'], questions: 5, boss: false, x: 14, y: 22 },
+  { id: 65, world: 'robots', name: 'מעבדת הצבעים', region: 21, topics: ['add-sub-20', 'compare'], questions: 5, boss: false, x: 32, y: 26 },
+  { id: 66, world: 'robots', name: 'אולם ההילוכים', region: 21, topics: ['tens', 'words'], questions: 5, boss: true, x: 52, y: 20 },
+  { id: 67, world: 'robots', name: 'חדר הסוללות', region: 22, topics: ['series', 'parity'], questions: 5, boss: false, x: 74, y: 26 },
+  { id: 68, world: 'robots', name: 'סדנת התיקונים', region: 22, topics: ['numberline', 'chain'], questions: 5, boss: false, x: 86, y: 46 },
+  { id: 69, world: 'robots', name: 'מעבדת הצעצועים', region: 22, topics: ['parts', 'word-problem'], questions: 5, boss: true, x: 62, y: 50 },
+  { id: 70, world: 'robots', name: 'מחסן המנועים', region: 23, topics: ['square', 'rectangle'], questions: 5, boss: false, x: 38, y: 46 },
+  { id: 71, world: 'robots', name: 'חדר הבקרה', region: 23, topics: ['length', 'polygons'], questions: 5, boss: false, x: 14, y: 52 },
+  { id: 72, world: 'robots', name: 'רובוט העל 👑', region: 23, topics: ['vertices', 'word-problem', 'series', 'chain', 'polygons'], questions: 5, boss: true, x: 84, y: 64 },
   /* ---------------- עולם חדי הקרן 🦄 ---------------- */
-  { id: 73, world: 'unicorns', name: 'שער עמק הקשת', region: 24, topics: ['units', 'words'], questions: 5, boss: false, x: 31, y: 77 },
-  { id: 74, world: 'unicorns', name: 'אגם הקסמים', region: 24, topics: ['add-sub-20', 'compare'], questions: 5, boss: false, x: 60, y: 78 },
-  { id: 75, world: 'unicorns', name: 'גשר הקשת', region: 24, topics: ['digits', 'series'], questions: 5, boss: false, x: 70, y: 47 },
-  { id: 76, world: 'unicorns', name: 'יער החברים', region: 25, topics: ['tens', 'parity'], questions: 5, boss: false, x: 24, y: 50 },
-  { id: 77, world: 'unicorns', name: 'שביל הכוכבים', region: 25, topics: ['numberline', 'chain'], questions: 5, boss: false, x: 37, y: 38 },
-  { id: 78, world: 'unicorns', name: 'מערת הזיכרונות', region: 25, topics: ['parts', 'word-problem'], questions: 5, boss: true, x: 15, y: 27 },
-  { id: 79, world: 'unicorns', name: 'שוק המשפחה', region: 26, topics: ['length', 'square'], questions: 5, boss: false, x: 47, y: 21 },
-  { id: 80, world: 'unicorns', name: 'מגרש המשחקים', region: 26, topics: ['rectangle', 'polygons'], questions: 5, boss: false, x: 55, y: 18 },
-  { id: 81, world: 'unicorns', name: 'טירת חדי הקרן 👑', region: 26, topics: ['vertices', 'word-problem', 'chain', 'series', 'compare'], questions: 5, boss: true, x: 86, y: 18 },
+  { id: 73, world: 'unicorns', name: 'שער עמק הקשת', region: 24, topics: ['units', 'words'], questions: 5, boss: false, x: 14, y: 78 },
+  { id: 74, world: 'unicorns', name: 'אגם הקסמים', region: 24, topics: ['add-sub-20', 'compare'], questions: 5, boss: false, x: 32, y: 82 },
+  { id: 75, world: 'unicorns', name: 'גשר הקשת', region: 24, topics: ['digits', 'series'], questions: 5, boss: false, x: 52, y: 78 },
+  { id: 76, world: 'unicorns', name: 'יער החברים', region: 25, topics: ['tens', 'parity'], questions: 5, boss: false, x: 74, y: 82 },
+  { id: 77, world: 'unicorns', name: 'שביל הכוכבים', region: 25, topics: ['numberline', 'chain'], questions: 5, boss: false, x: 86, y: 62 },
+  { id: 78, world: 'unicorns', name: 'מערת הזיכרונות', region: 25, topics: ['parts', 'word-problem'], questions: 5, boss: true, x: 62, y: 58 },
+  { id: 79, world: 'unicorns', name: 'שוק המשפחה', region: 26, topics: ['length', 'square'], questions: 5, boss: false, x: 38, y: 62 },
+  { id: 80, world: 'unicorns', name: 'מגרש המשחקים', region: 26, topics: ['rectangle', 'polygons'], questions: 5, boss: false, x: 14, y: 56 },
+  { id: 81, world: 'unicorns', name: 'טירת חדי הקרן 👑', region: 26, topics: ['vertices', 'word-problem', 'chain', 'series', 'compare'], questions: 5, boss: true, x: 84, y: 14 },
 ];
 
 export const MAX_STARS = LEVELS.length * 3;
@@ -291,13 +291,46 @@ export function shuffle<T>(values: T[]): T[] {
 
 function uniqueOptions(answer: string, alternatives: string[]): string[] {
   const all = [answer, ...alternatives].filter((value, index, list) => value.length > 0 && list.indexOf(value) === index);
+  // אם חסרות חלופות — מוסיפים placeholders שונים מהתשובה כדי להבטיח 4 אפשרויות
+  let idx = 1;
+  while (all.length < 4) {
+    const filler = `— ${idx}`;
+    if (!all.includes(filler)) all.push(filler);
+    idx += 1;
+    if (idx > 50) break; // ביטחון
+  }
   return shuffle(all.slice(0, 4));
 }
 
+/** מייצר 3 הסחות מספריות ייחודיות — תמיד 3, גם אם answer=0 או הפריטים חופפים */
 function numberOptions(answer: number, spread = 2, extra: number[] = []): string[] {
-  const pool = [...extra, answer - spread, answer + spread, answer - 1, answer + 1, answer + spread * 2, answer - spread * 2, answer + 10, answer + 2]
-    .filter((value) => value >= 0 && value !== answer);
-  const picks = shuffle(Array.from(new Set(pool))).slice(0, 3);
+  const candidates = [
+    ...extra,
+    answer - spread, answer + spread,
+    answer - 1, answer + 1,
+    answer - spread * 2, answer + spread * 2,
+    answer + 10, answer - 10, answer + 2, answer - 2,
+    answer + 5, answer - 5,
+  ];
+  const seen = new Set<number>();
+  const picks: number[] = [];
+  // קודם שולפים מתוך המועמדים, רק ערכים חיוביים שונים מ-answer
+  for (const value of shuffle(candidates)) {
+    if (value < 0 || value === answer || seen.has(value)) continue;
+    seen.add(value);
+    picks.push(value);
+    if (picks.length === 3) break;
+  }
+  // אם עדיין חסר (למשל answer=0), ממלאים במספרים עולים החל מ-answer+1
+  let filler = answer + 1;
+  while (picks.length < 3) {
+    if (!seen.has(filler) && filler !== answer && filler >= 0) {
+      seen.add(filler);
+      picks.push(filler);
+    }
+    filler += 1;
+    if (filler > answer + 100) break; // ביטחון מפני לולאה אינסופית
+  }
   return uniqueOptions(String(answer), picks.map(String));
 }
 
@@ -351,7 +384,8 @@ export function createQuestion(topicId: TopicId, difficulty: Difficulty): Questi
         `${first} ${answer} ${second}`);
     }
     case 'add-sub-20': {
-      const subtraction = Math.random() > 0.48;
+      // איזון מדויק 50/50 בין חיבור וחיסור
+      const subtraction = Math.random() >= 0.5;
       const first = subtraction ? randomInt(medium ? 12 : 6, 20) : randomInt(1, medium ? 15 : 10);
       const second = subtraction ? randomInt(1, first) : randomInt(1, Math.max(1, Math.min(20 - first, medium ? 12 : 10)));
       const answer = subtraction ? first - second : first + second;
@@ -376,7 +410,8 @@ export function createQuestion(topicId: TopicId, difficulty: Difficulty): Questi
     }
     case 'series': {
       const descending = Math.random() > 0.5;
-      const step = randomInt(1, expert ? 9 : medium ? 5 : 3);
+      // step מתחיל מ-2 — step=1 טריוויאלי מדי לתלמידי כיתה ב'
+      const step = randomInt(2, expert ? 9 : medium ? 5 : 3);
       const start = descending ? randomInt(40, 80) : randomInt(1, 20);
       const values = Array.from({ length: 5 }, (_, index) => start + (descending ? -1 : 1) * step * index);
       const answer = values[2];

@@ -22,7 +22,7 @@ if errorlevel 1 (
 )
 
 echo [1/4] מתקין ספריות של המשחק...
-call npm install
+call npm ci
 if errorlevel 1 goto failed
 
 echo.
@@ -33,7 +33,7 @@ if errorlevel 1 goto failed
 echo.
 echo [3/4] מתקין את Electron (עלול לקחת כמה דקות בפעם הראשונה)...
 cd desktop
-call npm install
+call npm ci
 if errorlevel 1 goto failed
 
 echo.

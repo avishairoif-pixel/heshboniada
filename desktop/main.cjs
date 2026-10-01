@@ -80,7 +80,8 @@ function createWindow() {
       nodeIntegration: false,
       sandbox: true,
       spellcheck: false,
-      devTools: true,
+      // DevTools פתוח רק בפיתוח — לא ב-production
+      devTools: !app.isPackaged,
     },
   });
 
@@ -104,8 +105,12 @@ function createWindow() {
       return;
     }
     if (input.key === 'F12') {
-      event.preventDefault();
-      win.webContents.toggleDevTools();
+      // F12 פעיל רק במצב פיתוח (לא באפליקציה הארוזה)
+      if (!app.isPackaged) {
+        event.preventDefault();
+        win.webContents.toggleDevTools();
+      }
+      return;
     }
   });
 

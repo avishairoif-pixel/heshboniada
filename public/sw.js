@@ -1,5 +1,5 @@
 /* החשבוניאדה — Service Worker לאפליקציה מותקנת + עבודה אופליין */
-const CACHE = 'cheshboniada-v7';
+const CACHE = 'cheshboniada-v8';
 const CORE = [
   './',
   './index.html',
@@ -86,7 +86,14 @@ const CORE = [
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE).then((cache) => cache.addAll(CORE)).then(() => self.skipWaiting()),
+    caches
+      .open(CACHE)
+      .then((cache) =>
+        // Promise.allSettled — אם קובץ אחד חסר, השאר עדיין נשמרים וה-SW נרשם בהצלחה
+        Promise.allSettled(CORE.map((url) => cache.add(url).catch(() => undefined))).then(() =>
+          self.skipWaiting(),
+        ),
+      ),
   );
 });
 

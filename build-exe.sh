@@ -16,7 +16,7 @@ if ! command -v node >/dev/null 2>&1; then
 fi
 
 echo "[1/4] מתקין ספריות של המשחק..."
-npm install
+npm ci
 
 echo ""
 echo "[2/4] בונה את המשחק..."
@@ -25,7 +25,7 @@ npm run build
 echo ""
 echo "[3/4] מתקין את Electron (עלול לקחת כמה דקות בפעם הראשונה)..."
 cd desktop
-npm install
+npm ci
 
 echo ""
 echo "[4/4] יוצר את קובץ ההתקנה..."

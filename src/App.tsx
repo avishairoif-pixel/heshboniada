@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { DIFFICULTIES, DIFFICULTY_LABEL, LEVELS, REGIONS, TOPICS, type Difficulty, type LevelDef, type WorldId } from './game/content';
 import { getBeatAfterStation, type StoryBeat } from './game/story';
-import { currentLevelId, isCompleted, loadProgress, loadScores, saveProgress, totalScore, totalStars, upsertScore, type Progress, type ScoreEntry } from './game/storage';
+import { currentLevelId, isCompleted, loadProgress, loadScores, resetProgress, saveProgress, totalScore, totalStars, upsertScore, type Progress, type ScoreEntry } from './game/storage';
 import { EmberField, StarRow } from './components/Bits';
 import { RacersModal, StoryJournalModal } from './components/Story';
 import StoryScene from './components/StoryScene';
@@ -10,7 +10,7 @@ import LevelPlay, { type LevelResult } from './components/LevelPlay';
 import { InstallModal, useInstallPrompt } from './components/Install';
 
 type Screen = 'start' | 'map' | 'play' | 'story';
-type Overlay = null | 'intro' | 'complete' | 'failed' | 'pause' | 'scores' | 'racers' | 'journal' | 'install';
+type Overlay = null | 'intro' | 'complete' | 'failed' | 'pause' | 'scores' | 'racers' | 'journal' | 'install' | 'reset';
 
 export default function App() {
   const [screen, setScreen] = useState<Screen>('start');
@@ -34,6 +34,14 @@ export default function App() {
     const done = await promptInstall();
     if (done) setOverlay(null);
   }, [promptInstall]);
+
+  const handleReset = useCallback(() => {
+    const { progress: empty, scores: defaults } = resetProgress();
+    setProgress(empty);
+    setScores(defaults);
+    setOverlay(null);
+    setScreen('start');
+  }, []);
 
   const openLevel = useCallback((level: LevelDef) => {
     setActiveLevel(level);
@@ -228,6 +236,7 @@ export default function App() {
               <button type="button" onClick={openRacers}>הכירי את המתחרים</button>
               <button type="button" onClick={() => setOverlay('scores')}>טבלת שיאים</button>
               {!isInstalled && <button type="button" onClick={() => setOverlay('install')}>התקנה לטלפון</button>}
+              {completedCount > 0 && <button type="button" onClick={() => setOverlay('reset')}>איפוס התקדמות</button>}
             </div>
           </div>
         </main>
@@ -453,6 +462,29 @@ export default function App() {
           onInstall={handleInstallClick}
           onClose={() => setOverlay(null)}
         />
+      )}
+
+      {/* חלון אישור איפוס התקדמות */}
+      {overlay === 'reset' && (
+        <div className="overlay" onClick={() => setOverlay(null)}>
+          <div className="panel" role="dialog" aria-modal="true" aria-label="איפוס התקדמות" onClick={(event) => event.stopPropagation()}>
+            <button className="panel-close" type="button" onClick={() => setOverlay(null)} aria-label="סגירה">×</button>
+            <div className="panel-icon">🔄</div>
+            <h2>לאפס את ההתקדמות?</h2>
+            <p className="panel-sub">
+              פעולה זו תמחק את כל הכוכבים, הציונים וטבלת השיאים. אי אפשר לבטל אותה.
+              מומלץ רק כשרוצים שחקן חדש יתחיל מההתחלה.
+            </p>
+            <div className="panel-actions">
+              <button className="btn-primary" type="button" onClick={handleReset}>
+                כן, לאפס הכל
+              </button>
+              <button className="btn-ghost" type="button" onClick={() => setOverlay(null)}>
+                ביטול
+              </button>
+            </div>
+          </div>
+        </div>
       )}
 
       {/* חלון הכירי את המתחרים */}
