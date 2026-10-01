@@ -697,13 +697,14 @@ button:focus-visible, input:focus-visible { outline: 3px solid var(--cyan-main);
   .hud-pill { display: none; }
   .world-switch { min-height: 34px; padding: 0 7px; font-size: 0.58rem; }
   .map-stage {
-    display: flex; align-items: center; justify-content: flex-start;
+    display: flex; align-items: center; justify-content: center;
     overflow: auto; padding: 8px;
     -webkit-overflow-scrolling: touch; overscroll-behavior: contain;
     touch-action: pan-x pan-y;
   }
   .map-frame {
-    width: 760px; min-width: 760px; flex: 0 0 760px;
+    width: 100%; max-width: 100%; min-width: 0; flex: 0 0 auto;
+    aspect-ratio: 3 / 2;
     border-width: 3px; border-radius: 16px;
   }
   .medal-topics { display: none; }
