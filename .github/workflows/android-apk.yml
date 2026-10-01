@@ -5,6 +5,9 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
   debug-apk:
     runs-on: ubuntu-latest
@@ -47,9 +50,22 @@ jobs:
           cd android
           ./gradlew assembleDebug --no-daemon
 
-      - uses: actions/upload-artifact@v4
+      - name: Copy APK to a friendly name
+        run: cp android/app/build/outputs/apk/debug/app-debug.apk android/app/build/outputs/apk/debug/Heshboniada.apk
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
         with:
           name: heshboniada-android-apk
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          path: android/app/build/outputs/apk/debug/Heshboniada.apk
           if-no-files-found: error
-          retention-days: 30
+          retention-days: 90
+
+      - name: Publish APK to Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: "החשבוניאדה — גרסה אחרונה"
+          body: "אפליקציית אנדרואיד מלאה שעובדת אופליין. הורד את Heshboniada.apk והתקן בטלפון."
+          files: android/app/build/outputs/apk/debug/Heshboniada.apk
+          make_latest: true
